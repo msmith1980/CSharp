@@ -1,0 +1,12 @@
+﻿<Window x:Class="Generator_WPF.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/CompositeWPF"
+        Title="Shell" Height="300" Width="300">
+    <Grid prism:RegionManager.RegionName="MainRegion">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid prism:RegionManager.RegionName="ControlRegion"/>
+    </Grid>
+</Window>

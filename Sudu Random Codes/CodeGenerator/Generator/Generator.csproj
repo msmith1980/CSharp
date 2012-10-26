@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="ModuleDefinitions\CodeGeneratorModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CodeToFile.cs" />
     <Compile Include="Services\CodeWithPattern.cs" />
     <Compile Include="Services\Generator.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />

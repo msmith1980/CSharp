@@ -7,15 +7,29 @@ using System.Threading.Tasks;
 
 namespace Generator.Services
 {
-    public abstract class BaseGenerator : IGenerator
+    public class BaseGenerator : IGenerator
     {
-        protected int codesRequired;
 
-        public BaseGenerator(int numberRequired)
+        public int CodesRequired
         {
-            this.codesRequired = numberRequired;
+            get;
+            set;
         }
 
-        public abstract void Generate();
+        public int LengthReguired
+        {
+            get;
+            set;
+        }
+
+        public BaseGenerator()
+        {
+            foreach (char letter in Enumerable.Range(65, 26).ToList().ConvertAll(delegate(int value) { return (char)value; }))
+            {
+                //breakpoint here to confirm
+            }
+        }
+
+        public virtual void Generate() { }
     }
 }

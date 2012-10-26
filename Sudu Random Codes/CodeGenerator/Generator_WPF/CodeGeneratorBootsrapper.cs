@@ -1,4 +1,5 @@
 ﻿using CodeGenerator.Infrastructure.Custom;
+using CodeGenerator.Infrastructure.Extensions;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Prism.UnityExtensions;
@@ -38,6 +39,13 @@ namespace Generator_WPF
             base.InitializeShell();
 
             ((Window)this.Shell).Show();
+        }
+
+        protected override void ConfigureContainer()
+        {
+            Container.AddExtension(new DecoratorExtension());
+
+            base.ConfigureContainer();
         }
     }
 }

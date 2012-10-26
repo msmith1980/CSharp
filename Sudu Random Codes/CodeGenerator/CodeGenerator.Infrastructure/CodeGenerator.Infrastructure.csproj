@@ -33,6 +33,13 @@
     <Reference Include="Microsoft.Practices.Prism">
       <HintPath>D:\Prism4.1\Bin\Desktop\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions">
+      <HintPath>D:\Prism4.1\Bin\Desktop\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Prism4.1\Bin\Desktop\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -49,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Custom\GridRegionAdapter.cs" />
+    <Compile Include="Extensions\DecoratorBuildStategies.cs" />
+    <Compile Include="Extensions\DecoratorExtension.cs" />
     <Compile Include="Interfaces\IGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

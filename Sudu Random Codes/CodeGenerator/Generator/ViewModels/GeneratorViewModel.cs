@@ -1,4 +1,5 @@
-﻿using Microsoft.Practices.Prism.Events;
+﻿using CodeGenerator.Infrastructure.Interfaces;
+using Microsoft.Practices.Prism.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,14 @@ namespace Generator.ViewModels
             }
         }
 
-        public GeneratorViewModel(IEventAggregator eventAggregator)
+        public GeneratorViewModel(IGenerator generator,IEventAggregator eventAggregator)
         {
+            this._generator = generator;
+            this._eventAggregator = eventAggregator;
 
         }
+
+        IGenerator _generator;
+        IEventAggregator _eventAggregator;
     }
 }

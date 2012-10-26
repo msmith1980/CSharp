@@ -1,4 +1,5 @@
 ﻿using CodeGenerator.Infrastructure.Interfaces;
+using Generator.Services;
 using Generator.Views;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.Prism.Modularity;
@@ -30,7 +31,12 @@ namespace Generator.ModuleDefinitions
 
         private void ConfigureServices()
         {
-           // container.RegisterType(typeof(IGenerator), null);
+            container.RegisterType<IGenerator, CodeToFile>();
+            container.RegisterType<IGenerator, CodeWithPattern>("CodeWithPattern");
+            container.RegisterType<IGenerator, BaseGenerator>();
+
+
+            var test = container.Resolve(typeof(IGenerator));
         }
 
         private void ConfigureEvents()

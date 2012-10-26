@@ -1,4 +1,5 @@
-﻿using Generator.Views;
+﻿using CodeGenerator.Infrastructure.Interfaces;
+using Generator.Views;
 using Microsoft.Practices.Prism.Events;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
@@ -29,7 +30,7 @@ namespace Generator.ModuleDefinitions
 
         private void ConfigureServices()
         {
-            
+           // container.RegisterType(typeof(IGenerator), null);
         }
 
         private void ConfigureEvents()

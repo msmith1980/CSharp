@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="ModuleDefinitions\CodeGeneratorModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CodeWithPattern.cs" />
+    <Compile Include="Services\Generator.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\GeneratorViewModel.cs" />
     <Compile Include="Views\GeneratorView.xaml.cs">
@@ -61,14 +63,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CodeGenerator.Infrastructure\CodeGenerator.Infrastructure.csproj">
+      <Project>{e3337bef-7df9-421c-bbef-5cddfa1f5306}</Project>
+      <Name>CodeGenerator.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CodeStorage\CodeStorage.csproj">
       <Project>{c2aab311-77f9-41cf-b182-c54e2a09db7a}</Project>
       <Name>CodeStorage</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Views\GeneratorView.xaml">
       <SubType>Designer</SubType>

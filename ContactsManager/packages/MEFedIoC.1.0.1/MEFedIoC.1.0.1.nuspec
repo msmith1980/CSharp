@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MEFedIoC</id>
+    <version>1.0.1</version>
+    <title>MEFedIoC</title>
+    <authors>Jone Polvora</authors>
+    <owners>Jone Polvora</owners>
+    <projectUrl>https://github.com/jpolvora/MEFedIoC</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MEF extension methods that will allows you to use MEF as an IoC container.</description>
+    <summary>MEF extension methods that will allows you to use MEF as an IoC container.</summary>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="" />
+    </frameworkAssemblies>
+    <references>
+      <reference file="MEFedIoC.dll" />
+    </references>
+  </metadata>
+</package>
